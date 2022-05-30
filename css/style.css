@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+body,
+html {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+li {
+  list-style: none;
+}
+
+/* header */
+.Header {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 30%);
+}
+
+.Header-Contents {
+  display: flex;
+  width: 100%;
+  max-width: 1570px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header-H1 {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
+.Header-H1 a:hover {
+  opacity: 0.9;
+}
+
+.Header-Nav-List {
+  display: flex;
+}
+
+.Header-Nav-List-Item {
+  margin-left: 70px;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+}
+
+/* hover */
+.Header-Nav-List-Item a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.Header-Nav-List-Item a::after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #333;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.Header-Nav-List-Item a:hover::after {
+  bottom: 2.5px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* main */
+.Main {
+  height: auto;
+  padding-top: 90px;
+}
+.Main-Mainvisual {
+  width: 100%;
+  margin: 0;
+}
+.Main-Mainvisual img {
+  width: 100%;
+}
+
+.Main-Wrapper {
+  margin: 0 auto;
+}
+
+.Main-section {
+  margin: 60px auto;
+  text-align: center;
+}
+
+.Main-section H2 {
+  display: inline;
+  font-weight: 100;
+  padding: 20px;
+}
+
+.Explanation {
+  font-size: 20px;
+  line-height: normal;
+  padding: 0 20px;
+}
+
+.Main-Contents {
+  max-width: 650px;
+  margin: 0 auto 90px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.Main-Contents p {
+  margin: 0;
+  margin-bottom: 200px;
+}
+
+.Main-Contents p a {
+  display: block;
+}
+
+.Main-Contents img {
+  width: 100%;
+}
+
+.Main-Contents a:hover {
+  box-shadow: 0 0 30px 0px rgb(0 0 0 / 25%);
+  transition: 0.5s;
+}
+
+/* fotter */
+.Fotter {
+  background-color: #868686;
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
+  color: aliceblue;
+}
