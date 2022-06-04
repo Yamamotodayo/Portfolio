@@ -106,12 +106,12 @@ li {
 .Main-section {
   margin: 60px auto;
   text-align: center;
+  padding: 20px;
 }
 
-.Main-section H2 {
+.Main-section-H2 {
   display: inline;
   font-weight: 100;
-  padding: 20px;
 }
 
 .Explanation {
